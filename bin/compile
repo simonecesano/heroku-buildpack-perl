@@ -18,7 +18,7 @@ PATH="$BUILD_DIR/local/bin:$PATH"
 
 export PERL5LIB="$BUILD_DIR/local/lib/perl5"
 
-PERL_CPANM_OPT="--quiet --notest -l $BUILD_DIR/local"
+PERL_CPANM_OPT="--notest -l $BUILD_DIR/local"
 if [ -f $ENV_DIR/PERL_CPANM_OPT ]; then
   PERL_CPANM_OPT="$PERL_CPANM_OPT $(cat $ENV_DIR/PERL_CPANM_OPT)"
 fi
